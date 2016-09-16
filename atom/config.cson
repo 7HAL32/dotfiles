@@ -1,0 +1,97 @@
+"*":
+  "atom-beautify":
+    apex: {}
+    arduino: {}
+    c: {}
+    cfml: {}
+    coffeescript: {}
+    cpp: {}
+    cs: {}
+    css: {}
+    d: {}
+    ejs: {}
+    erb: {}
+    fortran: {}
+    general:
+      analytics: false
+    gherkin: {}
+    handlebars: {}
+    html: {}
+    jade: {}
+    java: {}
+    js: {}
+    json: {}
+    jsx: {}
+    latex: {}
+    less: {}
+    marko: {}
+    mustache: {}
+    objectivec: {}
+    pawn: {}
+    perl: {}
+    php: {}
+    python: {}
+    riot: {}
+    ruby: {}
+    rust: {}
+    sass: {}
+    scss: {}
+    spacebars: {}
+    sql: {}
+    svg: {}
+    swig: {}
+    tss: {}
+    twig: {}
+    typescript: {}
+    vala: {}
+    visualforce: {}
+    xml: {}
+    xtemplate: {}
+  "atom-material-ui":
+    fonts: {}
+  "autoclose-html": {}
+  core:
+    disabledPackages: [
+      "linter-clang"
+    ]
+    packagesWithKeymapsDisabled: [
+      "latex"
+    ]
+  editor:
+    invisibles: {}
+    softWrap: true
+  "exception-reporting":
+    userId: "ce95a4b8-4fe5-1fb7-c09d-ba2f0f2f936b"
+  "file-icons":
+    coloured: false
+  latex: {}
+  latextools:
+    darwin: {}
+    viewer: "pdf-view"
+  linter:
+    showErrorPanel: false
+  "linter-gcc":
+    execPath: "/usr/local/Cellar/gcc/5.3.0/bin/g++-5"
+    gccDefaultCppFlags: "-c -Wall -std=c++11 "
+  minimap:
+    plugins:
+      codeglance: true
+      codeglanceDecorationsZIndex: 0
+      cursorline: true
+      cursorlineDecorationsZIndex: 0
+      "find-and-replace": true
+      "find-and-replaceDecorationsZIndex": 0
+      linter: true
+      linterDecorationsZIndex: 0
+      selection: true
+      selectionDecorationsZIndex: 0
+  pigments:
+    markerType: "dot"
+  "sync-settings":
+    _analyticsUserId: "24610f40-2ac8-4f60-ac16-faa4e526e65e"
+    _lastBackupHash: "728f7df04dc978c936e43e2a6fae9a1b106e1721"
+    analytics: false
+    gistId: "e962ef65bef6ea86ab44"
+    personalAccessToken: "e898b12f3adfc4c8fa39c669ac199f520d366984"
+  welcome:
+    showOnStartup: false
