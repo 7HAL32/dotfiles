@@ -57,9 +57,11 @@
     packagesWithKeymapsDisabled: [
       "latex"
     ]
+    telemetryConsent: "no"
   editor:
     invisibles: {}
     softWrap: true
+    softWrapAtPreferredLineLength: true
   "exception-reporting":
     userId: "ce95a4b8-4fe5-1fb7-c09d-ba2f0f2f936b"
   "file-icons":
@@ -73,6 +75,7 @@
   "linter-gcc":
     execPath: "/usr/local/Cellar/gcc/5.3.0/bin/g++-5"
     gccDefaultCppFlags: "-c -Wall -std=c++11 "
+  "linter-lua": {}
   minimap:
     plugins:
       codeglance: true

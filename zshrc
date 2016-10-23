@@ -57,6 +57,7 @@ bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
 export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -94,7 +95,7 @@ alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall 
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 alias backupAtom='apm list --installed --bare > ~/.dotfiles/atom/packages.list'
 alias restoreAtom='apm install --packages-file ~/.dotfiles/atom/packages.list'
-alias please="sudo $(fc -ln -1)" # sudo !!
+#alias please="sudo $(fc -ln -1)" # sudo !!
 eval "$(hub alias -s)" # wrap git into hub
 eval "$(thefuck --alias FUCK)" # alias for thefuck
 
