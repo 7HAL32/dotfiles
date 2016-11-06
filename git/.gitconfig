@@ -1,11 +1,12 @@
 [credential]
 	helper = osxkeychain
 [user]
+	name = Lutz Thies
 	email = lutz.thies@tu-dresden.de
-	name = 7HAL32
-	username = 7HAL32
+[github]
+ 	user = 7HAL32
 [push]
 	default = simple
 [core]
-	excludesfile = ~/.gitignore
+	excludesfile = ~/.gitignore_global
 	editor = nano

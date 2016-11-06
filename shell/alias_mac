@@ -1,0 +1,23 @@
+alias chrome="open -a /Applications/Google\ Chrome.app"
+
+alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
+alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
+
+is-executable thefuck && eval "$(thefuck --alias FUCK)" # alias for thefuck
+
+# Quick-Look preview files from the command line
+
+alias ql="qlmanage -p &>/dev/null"
+
+# Show/hide desktop icons
+
+alias desktopshow="defaults write com.apple.finder CreateDesktop -bool true && killfinder"
+alias desktophide="defaults write com.apple.finder CreateDesktop -bool false && killfinder"
+
+# Clean up LaunchServices to remove duplicates in the "Open With" menu
+
+alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
+
+# Exclude OSX specific files in ZIP archives
+
+alias zip="zip -x *.DS_Store -x *__MACOSX* -x *.AppleDouble*"

@@ -1,0 +1,40 @@
+alias zshcfg="nano ~/.zshrc"
+alias zshrld="source ~/.zshrc"
+alias cpwd='pwd|tr -d "\n"|pbcopy' # copy working directory to pbcopy
+alias rr="rm -rf"
+is-executable hub && eval "$(hub alias -s)" # wrap git into hub
+
+
+# Atom
+
+alias backupAtom='apm list --installed --bare > ~/.dotfiles/atom/packages.list'
+alias restoreAtom='apm install --packages-file ~/.dotfiles/atom/packages.list'
+
+# Navigation
+
+alias l='ls -lAhG' # shows everything (default zsh alias + highlighting)
+alias ls='ls -G' # always highlight directories
+alias lsd='ls -Gal | grep ^d' # list all directories
+
+alias ..='cd ..'
+alias ...='cd ../../'
+alias ....='cd ../../../'
+alias cd.='cd $(readlink -f .)'    # Go to real dir (i.e. if current dir is linked)
+
+# rsync
+
+alias rsync="rsync -vh --progress"
+
+# Network
+
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com" # public IP adress
+alias ipl="ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'" # local IP adress
+
+# Recursively remove Apple meta files
+
+alias cleanupds="find . -type f -name '*.DS_Store' -ls -exec /bin/rm {} \;"
+alias cleanupad="find . -type d -name '.AppleD*' -ls -exec /bin/rm -r {} \;"
+
+# Misc/Stuff
+alias week="date +%V" # which week
+alias nyan="telnet nyancat.dakko.us"
